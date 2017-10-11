@@ -1,0 +1,55 @@
+.skills{
+  height: 100% !important;
+  width: 100%;
+  min-height: 100%;
+  padding-bottom: 50px;
+  background: #F9F9F9;
+}
+.skills h1{
+  font-family: 'Dosis',sans-serif;
+  color: #000;
+  padding-left: 40px;
+  box-sizing: border-box;
+  font-weight: 100;
+  padding: 20px;
+  font-size: 2em;
+}
+.skill-container{
+  padding: 10px;
+  height: auto;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+.social_links{
+  display: flex;
+  padding: 25px;
+  box-sizing: border-box;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.github{
+  display: flex;
+  padding: 10px;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: row;
+    font-family: 'Dosis',sans-serif;
+    color: #FFF;
+    background: #c0392b;
+    box-sizing: border-box;
+    font-weight: 100;
+    padding: 20px;
+    font-size: 1em;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    border:solid 1px transparent;
+}
+.github:hover{
+  cursor: pointer;
+  color: #000;
+  background: transparent;
+  border:solid 1px #c0392b;
+}

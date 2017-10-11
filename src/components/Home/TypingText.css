@@ -1,0 +1,27 @@
+.typingText h1{
+  font-family: 'Roboto',sans-serif;
+  font-size: 4em;
+  color: #c03a2b;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+h1 span{
+  border-right: solid 2px #FFF;
+  animation: blinkAnimation 0.5s infinite;
+}
+@keyframes blinkAnimation {
+  0%{
+    border-right: solid 2px #FFF;
+  }
+  50%{
+      border-right: solid 2px transparent;
+  }
+}
+
+@media (max-width: 850px) {
+  /* styles */
+  .typingText h1{
+    font-size: 3em;
+    text-align: center;
+    word-spacing: 500px;
+  }
+}

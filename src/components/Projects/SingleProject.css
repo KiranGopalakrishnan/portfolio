@@ -1,0 +1,82 @@
+.single-project{
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -webkit-backface-visibility: hidden; /* Chrome, Safari, Opera */
+ backface-visibility: hidden;
+  transform: translate3d(0, 0, 0);
+}
+.single-project h4{
+  font-family: 'Dosis',sans-serif;
+  font-weight: 600;
+  font-size: 2em;
+  margin: 0;
+  padding: 0;
+}
+.single-project h5{
+  font-family: 'Dosis',sans-serif;
+  font-weight: 300;
+  color: #F5F5F5;
+  font-size: 1.25em;
+  padding: 0;
+  margin: 0;
+}
+.hover-revealer{
+  position: absolute;
+  top: 100%;
+  left: 0;
+  -ms-transform: rotate(180deg); /* IE 9 */
+  -webkit-transform: rotate(180deg); /* Safari */
+  transform: rotate(180deg);
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,0.5);
+  color: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: all 600ms ease;
+  -webkit-transition: all 600ms ease;
+   z-index: 0;
+   -webkit-backface-visibility: hidden; /* Chrome, Safari, Opera */
+  backface-visibility: hidden;
+}
+.hover-revealer .tags{
+  word-wrap: break-word;
+  font-family: 'Roboto',sans-serif;
+  font-weight: 300;
+  color: #FFF;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+.hover-reveal{
+  top: 0px;
+  -ms-transform: rotate(0deg); /* IE 9 */
+  -webkit-transform: rotate(0deg); /* Safari */
+  transform: rotate(0deg);
+}
+.visit-button{
+  padding: 10px 20px;
+  color: #FFF;
+  background: #27ae60;
+  font-family: 'Roboto',sans-serif;
+  font-weight: 100;
+  font-size: 1.25em;
+  text-decoration: none;
+  border-radius: 20px;
+}
+.visit-button-container{
+  padding: 10px;
+}
+@media (max-width: 850px) {
+  /* styles */
+  .single-project{
+    width:100% !important;
+  }
+}

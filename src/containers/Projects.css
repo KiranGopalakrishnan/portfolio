@@ -1,0 +1,38 @@
+.projects{
+  height: auto !important;
+  width: 100%;
+  min-height: 100%;
+  flex: 1;
+  display: block;
+  flex-direction: column;
+  padding-bottom: 50px;
+  background: #FFF;
+}
+.projects h1{
+  font-family: 'Dosis',sans-serif;
+  font-size: 2em;
+  color: #000;
+  padding-left: 40px;
+  box-sizing: border-box;
+  font-weight: 100;
+  padding: 20px;
+}
+.projects .listProjects{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  padding: 0 50px;
+  box-sizing: border-box;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 850px) {
+  /* styles */
+  .projects .listProjects{
+    display: flex;
+    flex-direction: column;
+    padding: 0 5px;
+  }
+}

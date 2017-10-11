@@ -1,0 +1,38 @@
+.not-fixed{
+  position: absolute;
+  top: 0;
+  left:0;
+}
+.fixed{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999999;
+}
+.head-bar{
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+.nav-bar{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex:5
+}
+.logo-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex: 5;
+  height: 10%;
+}
+
+@media (max-width: 850px) {
+  /* styles */
+  .fixed{
+    position: relative;
+  }
+}
