@@ -2,32 +2,44 @@ import React,{Component} from 'react';
 import './TypingText.css';
 var textArray=[];
 class TypingText extends Component{
-constructor(){
-  super();
-  this.state={
-    text:''
+  constructor(){
+    super();
+    this.state={
+      text:''
+    }
   }
-}
 
-componentDidMount=()=>{
+  componentDidMount=()=>{
     var i=0;
     textArray = (this.props.text).split('');
     var timer = setInterval(()=>{
       var selfe=this;
       if(i<textArray.length){
-          selfe.setState((prevState,props)=>{
-            return {text:prevState.text+textArray[i]}
-          });
-            }else{
+        selfe.setState((prevState,props)=>{
+          return {text:prevState.text+textArray[i]}
+        });
+      }else{
         clearInterval(timer);
+        selfe.props.onFinish();
       }
-    i++;
-  },this.props.time);
-}
-render(){
+      i++;
+    },this.props.time);
+  }
+  render(){
     return(
-      <div className='typingText'>
-      <h1><span>{this.state.text}</span></h1>
+      <div className='typingText' refs="typingText">
+      <svg viewBox="0 0 960 300">
+      <symbol id="s-text">
+      <text text-anchor="middle" x="50%" y="80%">{this.state.text}</text>
+      </symbol>
+      <g className="g-ants">
+      <use xlinkHref="#s-text" className="text-copy"></use>
+      <use xlinkHref="#s-text" className="text-copy"></use>
+      <use xlinkHref="#s-text" className="text-copy"></use>
+      <use xlinkHref="#s-text" className="text-copy"></use>
+      <use xlinkHref="#s-text" className="text-copy"></use>
+      </g>
+      </svg>
       </div>
     );
   }

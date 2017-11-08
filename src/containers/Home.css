@@ -1,5 +1,5 @@
 .home{
-  background: #0b1621;
+  background: #030321;
   height: 100%;
   width: 100%;
   min-height: 100%;
@@ -21,10 +21,10 @@
   flex-wrap: wrap;
   word-wrap: break-word;
   font-family: 'Roboto',sans-serif;
-  font-size: 1.25em;
+  font-size:  1.75em;
   font-weight: 100;
   color: #FFF;
-  text-align: justify;
+  text-align: center;
 }
 @media (max-width: 850px) {
   /* styles */

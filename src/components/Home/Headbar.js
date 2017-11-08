@@ -22,6 +22,7 @@ handleClick(item){
               <li onClick={()=>{this.handleClick("projects",this)}}>Projects</li>
                 <li onClick={()=>{this.handleClick("skills",this)}}>Skills</li>
                   <li onClick={()=>{this.handleClick("blog",this)}}>Blog</li>
+                  <li onClick={()=>{this.handleClick("story",this)}}>Story</li>
                   <li onClick={()=>{this.handleClick("contact",this)}}>Contact</li>
           </Nav>
         </div>

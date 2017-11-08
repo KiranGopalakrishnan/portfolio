@@ -26,6 +26,9 @@ class App extends Component {
       case "blog":
       window.open("https://medium.com/@kirangplkrishnan","_blank");
       break;
+      case "story":
+      window.open("https://stackoverflow.com/story/kirangopalakrishnan","_blank");
+      break;
       case "contact":
       window.open("https://www.linkedin.com/in/kiran-gopalakrishnan-1b21a479/","_blank");
     }
